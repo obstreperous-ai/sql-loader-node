@@ -5,9 +5,15 @@ on:
     tags:
       - 'v*'
 
+permissions:
+  contents: read
+
 jobs:
   build-binaries:
     runs-on: ${{ matrix.os }}
+    
+    permissions:
+      contents: read
     
     strategy:
       matrix:
@@ -43,6 +49,9 @@ jobs:
   create-release:
     needs: build-binaries
     runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
     
     steps:
     - uses: actions/checkout@v4
