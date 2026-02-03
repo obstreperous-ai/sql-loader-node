@@ -1,0 +1,37 @@
+version: '3'
+
+tasks:
+  install:
+    desc: Install dependencies
+    cmds:
+      - npm install
+
+  build:
+    desc: Build the project (no build step needed for plain Node.js)
+    cmds:
+      - echo "No build step required for this project"
+
+  test:
+    desc: Run tests
+    cmds:
+      - npm test
+
+  test:watch:
+    desc: Run tests in watch mode
+    cmds:
+      - npm run test:watch
+
+  lint:
+    desc: Run linter
+    cmds:
+      - npm run lint
+
+  clean:
+    desc: Clean dependencies and cache
+    cmds:
+      - rm -rf node_modules coverage .nyc_output
+
+  default:
+    desc: Show available tasks
+    cmds:
+      - task --list
