@@ -27,8 +27,8 @@
   },
   "devDependencies": {
     "eslint": "^10.3.0",
-    "jest": "^30.3.0",
-    "better-sqlite3": "^12.9.0"
+    "jest": "^30.4.2",
+    "better-sqlite3": "^12.10.0"
   },
   "engines": {
     "node": ">=18.0.0"
