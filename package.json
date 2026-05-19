@@ -23,7 +23,7 @@
   "license": "MIT",
   "dependencies": {
     "commander": "^14.0.3",
-    "pg": "^8.20.0"
+    "pg": "^8.21.0"
   },
   "devDependencies": {
     "eslint": "^10.3.0",
